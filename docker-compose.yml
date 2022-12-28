@@ -1,0 +1,22 @@
+services:
+  app:
+    container_name: chat
+    build: .
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+
+
+  postgres:
+    container_name: pg-container
+    restart: always
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=chat
+
