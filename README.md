@@ -1,4 +1,3 @@
-<img src="">
 <h1>How To Run</h1>
 <p>after cloning project or download open your terminal and 
 change directory to project and run "docker-compose up" </p>
