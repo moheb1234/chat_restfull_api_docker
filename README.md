@@ -10,7 +10,7 @@ if the postgres is installed on your system you have to stop the service
 or change postgres container port in docker-compose file</p>
 <h3>unite test:</h3>
 <p>you can run test in app container bash with command:</p>
-<p>python manage.py test</p>
+<p>python manage.py test </p>
 
 <h1>Api</h1>
 <table>
